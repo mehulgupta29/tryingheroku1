@@ -56,8 +56,7 @@ class WebpackBaseConfig {
             test: /^.((?!cssmodule).)*\.css$/,
             loaders: [
               { loader: 'style-loader' },
-              { loader: 'css-loader' },
-              { loader: 'postcss-loader' }
+              { loader: 'css-loader' }
             ]
           },
           {
@@ -69,7 +68,6 @@ class WebpackBaseConfig {
             loaders: [
               { loader: 'style-loader' },
               { loader: 'css-loader' },
-              { loader: 'postcss-loader' },
               { loader: 'sass-loader' }
             ]
           },
@@ -78,7 +76,6 @@ class WebpackBaseConfig {
             loaders: [
               { loader: 'style-loader' },
               { loader: 'css-loader' },
-              { loader: 'postcss-loader' },
               { loader: 'less-loader' }
             ]
           },
@@ -87,7 +84,6 @@ class WebpackBaseConfig {
             loaders: [
               { loader: 'style-loader' },
               { loader: 'css-loader' },
-              { loader: 'postcss-loader' },
               { loader: 'stylus-loader' }
             ]
           },
@@ -108,7 +104,6 @@ class WebpackBaseConfig {
                 loader: 'css-loader',
                 query: cssModulesQuery
               },
-              { loader: 'postcss-loader' },
               { loader: 'sass-loader' }
             ]
           },
@@ -119,8 +114,7 @@ class WebpackBaseConfig {
               {
                 loader: 'css-loader',
                 query: cssModulesQuery
-              },
-              { loader: 'postcss-loader' }
+              }
             ]
           },
           {
@@ -131,7 +125,6 @@ class WebpackBaseConfig {
                 loader: 'css-loader',
                 query: cssModulesQuery
               },
-              { loader: 'postcss-loader' },
               { loader: 'less-loader' }
             ]
           },
@@ -143,7 +136,6 @@ class WebpackBaseConfig {
                 loader: 'css-loader',
                 query: cssModulesQuery
               },
-              { loader: 'postcss-loader' },
               { loader: 'stylus-loader' }
             ]
           }
@@ -173,9 +165,6 @@ class WebpackBaseConfig {
           this.srcPathAbsolute,
           'node_modules'
         ]
-      },
-      postcss: function () {
-        return [];
       }
     };
   }
