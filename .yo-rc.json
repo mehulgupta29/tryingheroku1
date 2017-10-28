@@ -1,0 +1,9 @@
+{
+  "generator-react-webpack": {
+    "appName": "trying-heroku1",
+    "style": "stylus",
+    "cssmodules": true,
+    "postcss": true,
+    "generatedWithVersion": 4
+  }
+}
